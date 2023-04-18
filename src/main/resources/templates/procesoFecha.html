@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>TP 2 - Tito Benjamin</title>
+  </head>
+  <body>
+    <h2>Ejercicio 2</h2>
+    <form th:object="${procesoFecha}" th:action="@{/fechaProcesada}" method="post">
+      <label for="fecha1">Fecha 1: </label><br>
+      <input type="date" name="fecha1" th:field="*{fecha1}" required><br>
+      <label for="fecha2">Fecha 2: </label><br>
+      <input type="date" name="fecha2" th:field="*{fecha2}" required><br>
+      <input type="submit" value="Comprobar Datos">
+    </form>
+  </body>
+</html>

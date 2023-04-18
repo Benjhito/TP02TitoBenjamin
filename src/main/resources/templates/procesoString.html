@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>TP 2 - Tito Benjamin</title>
+  </head>
+  <body>
+	<h2>Ejercicio 3</h2>
+	<form th:object="${procesoString}" th:action="@{/stringResultado}" method="post">
+	  <label for="cadena">Cadena: </label><br>
+	  <input type="text" name="cadena" th:field="*{cadena}" required><br>
+	  <input type="submit" value="Comprobar Datos">
+	</form>
+  </body>
+</html>
